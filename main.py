@@ -6,6 +6,8 @@ import matplotlib.pyplot as plt
 
 assets=['RELIANCE', 'TCS', 'HDFCBANK', 'ICICIBANK', 'BHARTIARTL']
 data = get_data(assets)
+if not data:
+    raise ValueError("No data fetched for any of the assets.")
 
 strategies = {}
 for asset in assets:
