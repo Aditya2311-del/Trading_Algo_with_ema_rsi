@@ -4,8 +4,9 @@ import matplotlib.pyplot as plt
 %matplotlib inline
 
 
+assets=['RELIANCE', 'TCS', 'HDFCBANK', 'ICICIBANK', 'BHARTIARTL']
+data = get_data(assets)
 
-data = get_data()
 strategies = {}
 for asset in assets:
     print(f"Running strategy for {asset}")
