@@ -14,6 +14,10 @@ def get_data(assets):
    data = pd.concat(data_dict, axis=1, ignore_index=False)
    return data
 
-
+def risk(data):
+      df=pd.DataFrame()
+      df["returns"]= data["close"].pct_change()
+      risk_=df["returns"].std()
+      return risk_
 
   
