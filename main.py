@@ -1,4 +1,4 @@
-from utils import get_data
+from utils import get_data , risk
 from strategy import TRAD_STRATEGY
 import matplotlib.pyplot as plt
 %matplotlib inline
