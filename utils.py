@@ -2,9 +2,9 @@ from tvDatafeed import TvDatafeed, Interval
 import pandas as pd
 import pandas_ta as ta
 
-def get_data():
+def get_data(assets):
    tv = TvDatafeed()
-   assets = ['RELIANCE', 'TCS', 'HDFCBANK', 'ICICIBANK', 'BHARTIARTL']
+   #assets = ['RELIANCE', 'TCS', 'HDFCBANK', 'ICICIBANK', 'BHARTIARTL']
    data_dict = {}
 
    for asset in assets:
