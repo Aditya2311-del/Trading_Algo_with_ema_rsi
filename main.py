@@ -1,4 +1,5 @@
-from utils import get_data, 
+from utils import get_data
+from strategy import TRAD_STRATEGY
 import matplotlib.pyplot as plt
 %matplotlib inline
 
